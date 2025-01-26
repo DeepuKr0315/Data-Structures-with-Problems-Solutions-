@@ -35,7 +35,7 @@ class DoublyLinkedList:
             insertNode.prev.next = insertNode
         nodePosition.prev = insertNode
 
-    def inserPosition(self, position, node):
+    def insertPosition(self, position, node):
         curr = self.head
         counter = 0
         while curr != None and counter != position:
