@@ -76,34 +76,52 @@ class BinarySearchTree:
         while node.left:
             node = node.left
         return node.value
-    def inorder_traversal(self, node, result=[]):
-        if node:
-            self.inorder_traversal(node.left, result)
-            result.append(node.value)
-            self.inorder_traversal(node.right, result)
-        return result
-    def preorder_traversal(self, node, result=[]):
-        if node:
-            result.append(node.value)
-            self.preorder_traversal(node.left, result)
-            self.preorder_traversal(node.right, result)
-        return result 
-    def postorder_traversal(self, node, result=[]):
-        if node:
-            self.postorder_traversal(node.left, result)
-            self.postorder_traversal(node.right, result)
-            result.append(node.value)
-        return result
+    def inorder_traversal(self, node):
+        res = []
+        if not self.root:
+            return res
+        def inorder(node):
+            if node.left:
+                inorder(node.left)
+            res.append(node.value)
+            if node.right:
+                inorder(node.right)
+        inorder(self.root)
+        return res
+    def preorder_traversal(self, node):
+        res = []
+        if not self.root:
+            return res
+        def preorder(node):
+            res.append(node.value)
+            if node.left:
+                preorder(node.left)
+            if node.right:
+                preorder(node.right)
+        preorder(self.root)
+        return res
+    def dfs_post_order(self, node):
+        res = []
+        if not self.root:
+            return res
+        def postorder(node):
+            if node.left:
+                postorder(node.left)
+            if node.right:
+                postorder(node.right)
+            res.append(node.value)
+        postorder(self.root)
+        return res
 
 bst = BinarySearchTree()
 bst.insert(5).insert(10).insert(2).insert(17).insert(29).insert(23).insert(12)
 
-print("Inorder Traversal: ", bst.inorder_traversal(bst.root, []))
-print("Preorder Traversal: ", bst.inorder_traversal(bst.root, []))
-print("Postorder Traversal: ", bst.inorder_traversal(bst.root, []))
+print("Inorder Traversal: ", bst.inorder_traversal(bst.root))
+print("Preorder Traversal: ", bst.inorder_traversal(bst.root))
+print("Postorder Traversal: ", bst.inorder_traversal(bst.root))
 
 print("Find 12: ", bst.find(12))
 print("Find 15: ", bst.find(15))
 
 bst.remove(12)
-print("Inorder traversal after removing 12: ", bst.inorder_traversal(bst.root, []))
+print("Inorder traversal after removing 12: ", bst.inorder_traversal(bst.root))
