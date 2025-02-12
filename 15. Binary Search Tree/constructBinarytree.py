@@ -9,7 +9,7 @@ def buildTree(preorder, inorder):
         index_in  = inorder_map[root.val]
         number_of_elements_left = index_in - in_start
  
-        root.left = constructBinaryTree(pre_start + 1, pre_start + number_of_elements_left, in_start, index_in-1)
+        root.left = constructBinaryTree(pre_start + 1, pre_start + number_of_elements_left, in_start, index_in - 1)
  
         root.right = constructBinaryTree(pre_start + number_of_elements_left + 1, pre_end, index_in + 1, in_end)
  
