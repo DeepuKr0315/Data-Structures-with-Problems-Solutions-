@@ -20,4 +20,3 @@ def levelOrder2(root):
                 queue.append(curr.right)
         result.append(curr_level_values)
     return result[::-1]
-
