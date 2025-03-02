@@ -64,4 +64,3 @@ class PriorityQueue:
             self.data[index] = self.data[smallest]
             self.data[smallest] = element
             index = smallest
-            
