@@ -1,3 +1,14 @@
+"""
+Number of connected components
+
+You are given a graph with n vertices. To indicate the connections in the graph you are given 
+an array edges whose each element is an array of the form [u,v]. [u,v] indicates that there is 
+an edge between u and v where u and v denote two vertices or nodes. Write a function that takes 
+in ‘n’ and the ‘edges’ array and returns the number of connected components in the graph.
+
+"""
+
+
 def buildAdjacencyList(n, edges):
     adjacency_list = [[] for _ in range(n)]
     for edge in edges:
