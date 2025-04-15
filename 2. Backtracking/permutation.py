@@ -11,7 +11,7 @@ def permute(nums):
             res.append(nums[:])
             return
         for j in range(index, n):
-            nums[index], nums[j] = nums[j], num5s[index]
+            nums[index], nums[j] = nums[j], nums[index]
             helper(index+1)
             nums[index], nums[j] = nums[j], nums[index]
     helper(0)
