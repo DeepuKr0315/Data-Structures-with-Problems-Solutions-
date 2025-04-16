@@ -18,5 +18,3 @@ def removeNthFromEnd(head, n):
 
     left.next = left.next.next
     return dummy.next
-
-print(removeNthFromEnd(head = [1,2,3,4,5], n = 2))
