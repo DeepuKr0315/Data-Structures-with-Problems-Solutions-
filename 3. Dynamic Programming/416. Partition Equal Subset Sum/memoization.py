@@ -1,9 +1,9 @@
 # problem link = https://leetcode.com/problems/partition-equal-subset-sum/
 
 def canPartition(self, nums):
-    if sum(nums)%2 != 0:
+    if sum(nums) % 2 != 0:
         return False
-        memo = {}
+    memo = {}
     total_sum = sum(nums)//2
     def helper(index, rem_sum):
         if rem_sum == 0:
