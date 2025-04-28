@@ -1,5 +1,5 @@
 # 2563. Count the Number of Fair Pairs
-# problem link = https://leetcode.com/problems/count-the-number-of-fair-pairs/description/
+# Problem Link = https://leetcode.com/problems/count-the-number-of-fair-pairs/description/
 
 def countFairPairs(nums, upper, lower):
     nums.sort()
