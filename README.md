@@ -1,6 +1,5 @@
 # 🐍 LeetCode Solutions in Python
 
----
 
 Welcome to my LeetCode practice repository! 🚀  
 This repo contains Python solutions to various coding problems from [LeetCode](https://leetcode.com/), grouped by topic and difficulty level.
