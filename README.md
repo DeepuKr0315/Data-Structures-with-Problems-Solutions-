@@ -18,7 +18,6 @@ This repo contains Python solutions to various coding problems from [LeetCode](h
 
 ```
 leetcode-python-solutions/
-├── Arrays
 ├── Recursion
 ├── Backtracking 
 ├── Dynamic Programming
