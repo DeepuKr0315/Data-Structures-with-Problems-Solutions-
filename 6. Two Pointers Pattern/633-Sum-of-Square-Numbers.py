@@ -1,4 +1,5 @@
-# Problem link = 633. Sum of Square Numbers
+# Problem link = https://leetcode.com/problems/sum-of-square-numbers/description/
+# 633. Sum of Square Numbers
 
 def judgeSquareSum(num):
     def sqrt(num):
