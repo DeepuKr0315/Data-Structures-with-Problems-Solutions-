@@ -1,3 +1,5 @@
+# Problem link = https://leetcode.com/problems/lexicographical-numbers/description
+
 def lexicographical_num(n):
     res = [] 
     def dfs(num):
