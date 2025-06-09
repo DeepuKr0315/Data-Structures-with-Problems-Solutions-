@@ -1,6 +1,12 @@
 # 105. Construct Binary Tree from Preorder and Inorder Traversal
 # Problem Link = https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/?envType=problem-list-v2&envId=binary-tree
 
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None, next=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 def buildTree(preorder, inorder):
     def constructBinaryTree(pre_start,pre_end,in_start,in_end):
         if pre_start>pre_end or in_start>in_end:
