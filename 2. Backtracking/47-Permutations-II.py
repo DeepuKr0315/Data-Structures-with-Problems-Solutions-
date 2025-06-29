@@ -1,4 +1,4 @@
-# This cide help us to fnd permutation where elements are repeated
+# This code help us to fnd permutation where elements are repeated
 
 # Problem = https://leetcode.com/problems/permutations-ii/description/
 
