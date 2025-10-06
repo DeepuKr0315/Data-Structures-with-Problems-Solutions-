@@ -17,7 +17,3 @@ def isMtach_recursion(s1, s2):
             return helper(idx1 + 1, idx2) or helper(idx1, idx2 + 1)
         return False
     return helper(0, 0)
-
-s1 = "aa"
-s2 = "a"
-print(isMtach_recursion(s1, s2)) 
